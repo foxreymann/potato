@@ -12,7 +12,7 @@ li picture {
   width: 120px;
   height: 85px;
   line-height: 85px;
-  text-align: center;
+  /* text-align: center; */
   display: inline-block;
 }
 
