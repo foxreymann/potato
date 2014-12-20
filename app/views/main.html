@@ -1,6 +1,8 @@
 <ul>
   <li ng-repeat="item in feed.items">
-    <img src="{{ item.media.m }}"/>
+    <picture>
+      <img src="{{ item.media.m }}"/>
+    </picture>
     <a href="{{ item.link }}">{{item.title}}</a>
   </li>
 </ul>
