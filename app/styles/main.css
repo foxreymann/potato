@@ -4,22 +4,30 @@ ul {
   padding: 0;
 }
 
-li {
+article {
   border-bottom: 1px solid #555;
+  overflow: hidden;
+  height: 85px;
 }
 
-li picture {
+article > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+article picture {
   width: 120px;
   height: 85px;
   line-height: 85px;
-  /* text-align: center; */
+  text-align: center;
   display: inline-block;
+  vertical-align: middle;
+
 }
 
-li picture img {
-  display: inline-block;
+article picture img {
   max-width: 120px;
-  max-height: 85px;  
+  max-height: 85px;
 }
 
 
