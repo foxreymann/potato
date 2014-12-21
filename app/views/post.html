@@ -1,9 +1,11 @@
+POST PAGE
+
 <article ng-repeat="item in feed.items">
   <picture>
     <img src="{{ item.media.m }}"/>
   </picture>
   <div>
-    <a href="#/post/{{ item.link | encodeUri }}">{{item.title}}</a>
+    <a href="{{ item.link }}">{{item.title}}</a>
     <div>
       Published: {{ item.published | ordinalDate:'d MMMM yyyy' }}
     </div>

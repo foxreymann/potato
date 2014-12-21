@@ -12,7 +12,8 @@ angular
   .module('potatoFlickrApp', [
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'rt.encodeuri'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,6 +24,10 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/post/:id', {
+        templateUrl: 'views/post.html',
+        controller: 'PostCtrl'
       })
       .otherwise({
         redirectTo: '/'
