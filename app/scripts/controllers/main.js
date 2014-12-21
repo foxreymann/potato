@@ -9,7 +9,7 @@
  */
 
 angular.module('potatoFlickrApp')
-  .controller('MainCtrl', function ($scope, $rootScope, $http) {
+  .controller('MainCtrl', function ($scope, $rootScope, $http, $location) {
     // var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D\'http%3A%2F%2Fdailyjs.com%2Fatom.xml\'%20and%20itemPath%3D\'feed.entry\'&format=json&diagnostics=true&callback=JSON_CALLBACK';
     var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&tagmode=all&format=json&jsoncallback=JSON_CALLBACK';
 
@@ -20,14 +20,14 @@ angular.module('potatoFlickrApp')
           title: data.title,
           items: data.items
         };
-        $rootScope.feed = $scope.feed;
       }).
       error(function(data, status, headers, config) {
         console.error('Error fetching feed:', data);
       });
 
-      $scope.showPost = function(item) {
-        console.log(item);
+      $scope.showPost = function(post) {
+        $rootScope.post = post;
+        $location.path('/post');
       };
 
   });

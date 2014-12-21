@@ -1,17 +1,1 @@
 POST PAGE
-
-<article ng-repeat="item in feed.items">
-  <picture>
-    <img src="{{ item.media.m }}"/>
-  </picture>
-  <div>
-    <a href="{{ item.link }}">{{item.title}}</a>
-    <div>
-      Published: {{ item.published | ordinalDate:'d MMMM yyyy' }}
-    </div>
-    <div>
-      <a href="{{ item.link }}">Photo author</a>
-      <a href="{{ item.link }}">View on Flickr</a>
-    </div>
-  </div>
-</article>

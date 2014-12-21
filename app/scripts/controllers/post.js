@@ -10,6 +10,5 @@
 
 angular.module('potatoFlickrApp')
   .controller('PostCtrl', function ($scope, $rootScope) {
-    $scope.feed = $rootScope.feed;
-    console.log($scope.feed);
+    console.log($rootScope.post);
   });
