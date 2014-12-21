@@ -26,4 +26,8 @@ angular.module('potatoFlickrApp')
         console.error('Error fetching feed:', data);
       });
 
+      $scope.showPost = function(item) {
+        console.log(item);
+      };
+
   });

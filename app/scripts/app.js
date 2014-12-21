@@ -12,8 +12,7 @@ angular
   .module('potatoFlickrApp', [
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'rt.encodeuri'
+    'ngTouch'
   ])
   .config(function ($routeProvider) {
     $routeProvider
