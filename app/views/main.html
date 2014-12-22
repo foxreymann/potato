@@ -5,7 +5,7 @@
   <div>
     <a href="javascript:" ng-click="showPost(item)">{{item.title}}</a>
     <div>
-      Published: {{ item.published | ordinalDate:'d MMMM yyyy' }}
+      Published: {{ item.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
     </div>
     <div>
       <a href="{{ item.link }}">Photo author</a>
