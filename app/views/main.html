@@ -1,6 +1,8 @@
 <article ng-repeat="item in feed.items">
   <picture>
-    <img src="{{ item.media.m }}"/>
+    <a href="javascript:" ng-click="showPost(item)">
+      <img src="{{ item.media.m }}"/>
+    </a>
   </picture>
   <div>
     <a href="javascript:" ng-click="showPost(item)">{{item.title}}</a>
