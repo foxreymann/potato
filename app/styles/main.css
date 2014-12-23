@@ -1,21 +1,15 @@
-ul {
-  list-style: none;
-  border: 1px solid #000;
-  padding: 0;
-}
-
-article {
+.posts-list article {
   border-bottom: 1px solid #555;
   overflow: hidden;
   height: 85px;
 }
 
-article > div {
+.posts-list article > div {
   display: inline-block;
   vertical-align: top;
 }
 
-article picture {
+.posts-list article picture {
   width: 120px;
   height: 85px;
   line-height: 85px;
@@ -25,13 +19,12 @@ article picture {
 
 }
 
-article picture img {
+.posts-list article picture img {
   max-width: 120px;
   max-height: 85px;
   display: inline-block;
   vertical-align: middle;
 }
-
 
 /* Responsive: 800px and up */
 @media screen and (min-width: 800px) {
