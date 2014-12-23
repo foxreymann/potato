@@ -10,7 +10,10 @@
   <div>
     <div ng-bind-html="post.description" class="description">
     </div>
-    Tags: {{ post.tags }}
+    Tags:
+    <a ng-repeat="tag in post.tags" href="https://www.flickr.com/search?text={{ tag }}">
+      {{ tag }}
+    </a>
   </div>
 
   <a href="#/">Back</a>

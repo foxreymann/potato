@@ -15,4 +15,5 @@ angular.module('potatoFlickrApp')
       $location.path('#/');
     }
     $scope.post = $rootScope.post;
+    $scope.post.tags = $scope.post.tags.split(' ');
   });
