@@ -1,7 +1,7 @@
 <article class="post">
   <h1><a href="javascript:" ng-href="{{ post.link }}">{{ post.title }}</a></h1>
   <p>
-    <a href="https://www.flickr.com/people/{{ item.author_id}}">Post author</a> |
+    <a href="https://www.flickr.com/people/{{ post.author_id}}">Post author</a> |
     Published: {{ post.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
   </p>
   <picture>
