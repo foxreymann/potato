@@ -1,6 +1,10 @@
 POST PAGE
 <article>
-  <h1>{{ post.title }}</h1>
+  <h1><a href="javascript:" ng-href="{{ post.link }}">{{ post.title }}</a></h1>
+  <p>
+    <a href="https://www.flickr.com/people/{{ item.author_id}}">Post author</a> |
+    Published: {{ post.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
+  </p>
 
   <a href="#/">Back</a>
 </article>
