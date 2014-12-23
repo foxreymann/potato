@@ -1,4 +1,4 @@
-<article>
+<article class="post">
   <h1><a href="javascript:" ng-href="{{ post.link }}">{{ post.title }}</a></h1>
   <p>
     <a href="https://www.flickr.com/people/{{ item.author_id}}">Post author</a> |
@@ -8,7 +8,8 @@
     <img src="{{ post.media.m }}"/>
   </picture>
   <div>
-    {{ post.description }}
+    <div ng-bind-html="post.description" class="description">
+    </div>
     Tags: {{ post.tags }}
   </div>
 

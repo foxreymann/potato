@@ -26,6 +26,14 @@
   vertical-align: middle;
 }
 
+.post .description p {
+  display: none;
+}
+
+.post .description p:last-child {
+  display: block;
+}
+
 /* Responsive: 800px and up */
 @media screen and (min-width: 800px) {
 
