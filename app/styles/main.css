@@ -1,5 +1,15 @@
 body {
   font-family:  'Trebuchet MS', Helvetica, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 10px 0 30px;
+}
+
+.posts-list {
+
 }
 
 .posts-list article {
