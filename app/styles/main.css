@@ -1,3 +1,7 @@
+body {
+  font-family:  'Trebuchet MS', Helvetica, sans-serif;
+}
+
 .posts-list article {
   border-bottom: 1px solid #555;
   overflow: hidden;
