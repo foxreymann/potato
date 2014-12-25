@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -44,6 +45,7 @@ h1 {
 
 .posts-list article h2 {
   font-size: 26px;
+  max-height: 26px;
 }
 
 .posts-list article picture {
