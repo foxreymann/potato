@@ -1,7 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family:  'Trebuchet MS', Helvetica, sans-serif;
   padding: 20px;
+  box-sizing: border-box;
 }
+
 
 h1 {
   font-size: 40px;
@@ -14,10 +23,11 @@ h1 {
 }
 
 .posts-list article {
-  border-bottom: 1px solid #555;
-  overflow: hidden;
+  border-bottom: 2px solid #555;
+  text-overflow: ellipsis;
   height: 100px;
 }
+
 
 .posts-list article:last-child {
   border-bottom: none;
@@ -26,6 +36,14 @@ h1 {
 .posts-list article > div {
   display: inline-block;
   vertical-align: top;
+  width: 100%;
+  padding-left: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.posts-list article h2 {
+  font-size: 26px;
 }
 
 .posts-list article picture {
@@ -35,12 +53,12 @@ h1 {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
-
+  position: absolute;
 }
 
 .posts-list article picture img{
   max-width: 120px;
-  max-height: 80px;
+  max-height: 75px;
   display: inline-block;
   vertical-align: middle;
   border: 2px solid #555;
