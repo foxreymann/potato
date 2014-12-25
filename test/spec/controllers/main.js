@@ -1,5 +1,3 @@
-'use strict';
-
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
@@ -10,7 +8,8 @@ describe('Controller: MainCtrl', function () {
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope, $httpBackend, mockedFlickrFeed) {
-    $httpBackend.whenJSONP(/api.flickr.comi\/services\/feeds\/photos_public.gne/).respond(mockedFlickrFeed);
+    httpBackend = $httpBackend;
+    $httpBackend.whenJSONP(/api.flickr.com\/services\/feeds\/photos_public.gne/).respond(mockedFlickrFeed);
 
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
@@ -18,7 +17,8 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(3).toBe(3);
+  it('should load data from the feed to the scope', function () {
+    httpBackend.flush();
+    expect(scope.feed.title).toBe('Recent Uploads tagged potato');
   });
 });

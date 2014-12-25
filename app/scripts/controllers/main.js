@@ -16,10 +16,7 @@ angular.module('potatoFlickrApp')
 
     $http.jsonp(url).
       success(function(data, status, headers, config) {
-        $scope.feed = {
-          title: data.title,
-          items: data.items
-        };
+        $scope.feed = data;
       }).
       error(function(data, status, headers, config) {
         console.error('Error fetching feed:', data);
