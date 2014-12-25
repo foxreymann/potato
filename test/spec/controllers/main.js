@@ -3,13 +3,15 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('potatoFlickrApp'));
+  beforeEach(module('potatoFlickrApp', 'mockedFlickrFeedModule'));
 
   var MainCtrl,
     scope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($controller, $rootScope, $httpBackend, mockedFlickrFeed) {
+    $httpBackend.whenJSONP(/api.flickr.comi\/services\/feeds\/photos_public.gne/).respond(mockedFlickrFeed);
+
     scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
@@ -17,6 +19,6 @@ describe('Controller: MainCtrl', function () {
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+    expect(3).toBe(3);
   });
 });
