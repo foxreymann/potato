@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('potatoFlickrApp')
   .filter('ordinalDate', function($filter) {
 
