@@ -10,7 +10,6 @@
 
 angular.module('potatoFlickrApp')
   .controller('PostCtrl', function ($scope, $rootScope, $location) {
-    console.log($rootScope.post);
     if(!$rootScope.post) {
       $location.path('#/');
     }
