@@ -8,10 +8,10 @@
     <div>
       <a href="javascript:" ng-click="showPost(item)">{{item.title}}</a>
       <div>
-        Published: {{ item.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
-      </div>
-      <div>
         <a href="https://www.flickr.com/people/{{ item.author_id}}">Post author</a>
+        <span>
+          Published: {{ item.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
+        <span>
         <a href="{{ item.link }}">View on Flickr</a>
       </div>
     </div>
