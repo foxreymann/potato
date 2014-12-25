@@ -9,13 +9,14 @@ h1 {
 }
 
 .posts-list {
-  border: 1px solid #000;
+  border: 2px solid #555;
+  border-radius: 4px;
 }
 
 .posts-list article {
   border-bottom: 1px solid #555;
   overflow: hidden;
-  height: 85px;
+  height: 100px;
 }
 
 .posts-list article:last-child {
@@ -28,20 +29,21 @@ h1 {
 }
 
 .posts-list article picture {
-  width: 120px;
-  height: 85px;
-  line-height: 85px;
+  width: 140px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
   display: inline-block;
   vertical-align: middle;
 
 }
 
-.posts-list article picture img {
+.posts-list article picture img{
   max-width: 120px;
-  max-height: 85px;
+  max-height: 80px;
   display: inline-block;
   vertical-align: middle;
+  border: 2px solid #555;
 }
 
 .post .description p {
