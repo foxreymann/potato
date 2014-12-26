@@ -8,19 +8,18 @@ describe('Controller: MainCtrl', function () {
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope, $httpBackend, mockedFlickrFeed) {
+
     httpBackend = $httpBackend;
     $httpBackend.whenJSONP(/api.flickr.com\/services\/feeds\/photos_public.gne/).respond(mockedFlickrFeed);
 
     scope = $rootScope.$new();
+
+    rootScope = $rootScope;
+
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
 
-    //inject $rootScope
-    inject(function ($rootScope) {
-      //instead don't create a child scope and keep a reference to the actual rootScope
-      rootScope = $rootScope;
-    })
   }));
 
   it('should load data from the feed to the scope', function () {
@@ -34,5 +33,13 @@ describe('Controller: MainCtrl', function () {
     httpBackend.flush();
     scope.showPost(scope.feed.items[0]);
     expect(rootScope.post).toBe(scope.feed.items[0]);
+  });
+
+  it('should redirect to /post in showPost function', function () {
+    httpBackend.flush();
+    inject(function($location) {
+      scope.showPost(scope.feed.items[0]);
+      expect($location.path()).toBe('/post');
+    });
   });
 });
