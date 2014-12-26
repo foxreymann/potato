@@ -4,9 +4,8 @@
  * @ngdoc overview
  * @name potatoFlickrApp
  * @description
- * # potatoFlickrApp
  *
- * Main module of the application.
+ * App reads and displays Flickr feed for a tag 'potato'
  */
 angular
   .module('potatoFlickrApp', [

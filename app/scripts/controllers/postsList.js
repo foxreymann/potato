@@ -4,8 +4,8 @@
  * @ngdoc function
  * @name potatoFlickrApp.controller:PostsListCtrl
  * @description
- * # PostsListCtrl
- * Controller of the potatoFlickrApp
+ *
+ * Controller reads and displays JSONP Flickr feed
  */
 
 angular.module('potatoFlickrApp')
@@ -20,9 +20,9 @@ angular.module('potatoFlickrApp')
         console.error('Error fetching feed:', data);
       });
 
-      $scope.showPost = function(post) {
-        $rootScope.post = post;
-        $location.path('/post');
-      };
+    $scope.showPost = function(post) {
+      $rootScope.post = post;
+      $location.path('/post');
+    };
 
   });
