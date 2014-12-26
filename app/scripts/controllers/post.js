@@ -4,8 +4,8 @@
  * @ngdoc function
  * @name potatoFlickrApp.controller:PostCtrl
  * @description
- * # PostCtrl
- * Controller of the potatoFlickrApp
+ *
+ * Controller reads one Flickr post data from rootScope and displays them
  */
 
 angular.module('potatoFlickrApp')
