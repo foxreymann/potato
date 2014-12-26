@@ -1,9 +1,9 @@
-describe('Controller: MainCtrl', function () {
+describe('Controller: PostsListCtrl', function () {
 
   // load the controller's module
   beforeEach(module('potatoFlickrApp', 'mockedFlickrFeedModule'));
 
-  var MainCtrl,
+  var PostsListCtrl,
     scope;
 
   // Initialize the controller and a mock scope
@@ -16,7 +16,7 @@ describe('Controller: MainCtrl', function () {
 
     rootScope = $rootScope;
 
-    MainCtrl = $controller('MainCtrl', {
+    PostsListCtrl = $controller('PostsListCtrl', {
       $scope: scope
     });
 

@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name potatoFlickrApp.controller:MainCtrl
+ * @name potatoFlickrApp.controller:PostsListCtrl
  * @description
- * # MainCtrl
+ * # PostsListCtrl
  * Controller of the potatoFlickrApp
  */
 
 angular.module('potatoFlickrApp')
-  .controller('MainCtrl', function ($scope, $rootScope, $http, $location) {
+  .controller('PostsListCtrl', function ($scope, $rootScope, $http, $location) {
     var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&tagmode=all&format=json&jsoncallback=JSON_CALLBACK';
 
     $http.jsonp(url).
