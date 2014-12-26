@@ -46,4 +46,10 @@ describe('Controller: PostCtrl', function () {
     expect(scope.post.title).toBe('Happy Thanksgiving 7');
     expect(scope.post).toBe(rootScope.post);
   });
+
+  it('should split string with tags data into an array', function () {
+    customBeforeEach(setPostData = true);
+    expect(Array.isArray(scope.post.tags)).toBe(true);
+    expect(scope.post.tags[4]).toBe('potato');
+  });
 });
