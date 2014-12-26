@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: #135592;
+}
+
 
 h1 {
   font-size: 40px;
@@ -46,6 +50,10 @@ h1 {
 .posts-list article h2 {
   font-size: 26px;
   max-height: 26px;
+}
+
+.posts-list article h2 a {
+    text-decoration: none;
 }
 
 .posts-list article picture {
