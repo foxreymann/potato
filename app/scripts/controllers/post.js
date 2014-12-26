@@ -11,7 +11,8 @@
 angular.module('potatoFlickrApp')
   .controller('PostCtrl', function ($scope, $rootScope, $location) {
     if(!$rootScope.post) {
-      $location.path('#/');
+      $location.path('/');
+      return;
     }
     $scope.post = $rootScope.post;
     $scope.post.tags = $scope.post.tags.split(' ');
