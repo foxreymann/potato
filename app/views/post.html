@@ -11,7 +11,7 @@
     <div ng-bind-html="post.description" class="description">
     </div>
     Tags:
-    <a ng-repeat="tag in post.tags" href="https://www.flickr.com/search?text={{ tag }}">
+    <a ng-repeat="tag in post.tags" href="{{ config.searchPageUrl | stringFormat:tag }}">
       {{ tag }}
     </a>
   </div>
