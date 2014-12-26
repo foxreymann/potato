@@ -9,10 +9,10 @@
  */
 
 angular.module('potatoFlickrApp')
-  .controller('PostsListCtrl', function ($scope, $rootScope, $http, $location) {
-    var url = 'https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&tagmode=all&format=json&jsoncallback=JSON_CALLBACK';
+  .controller('PostsListCtrl', function ($scope, $rootScope, $http, $location, productionConfig) {
+    $scope.config = productionConfig;
 
-    $http.jsonp(url).
+    $http.jsonp($scope.config.feedUrl).
       success(function(data, status, headers, config) {
         $scope.feed = data;
       }).
