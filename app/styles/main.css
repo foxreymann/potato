@@ -47,6 +47,10 @@ h1 {
   overflow: hidden;
 }
 
+.posts-list .post-data {
+  color: red;
+}
+
 .posts-list article h2 {
   font-size: 26px;
   max-height: 26px;
