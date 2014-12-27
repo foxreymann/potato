@@ -22,22 +22,22 @@ h1 {
   margin: 10px 0 33px;
 }
 
-.posts-list, .post {
+section {
   border: 2px solid #555;
   border-radius: 4px;
 }
 
-.posts-list article {
+.post-on-list {
   border-bottom: 2px solid #555;
   height: 100px;
 }
 
 
-.posts-list article:last-child {
+.post-on-list:last-child {
   border-bottom: none;
 }
 
-.posts-list article > div {
+.post-on-list > div {
   display: inline-block;
   vertical-align: top;
   width: 100%;
@@ -50,7 +50,7 @@ h1 {
   margin-right: 10px;
 }
 
-.posts-list h2 {
+.post-on-list h2 {
   font-size: 26px;
   padding: 20px 0 16px;
 }
@@ -60,11 +60,11 @@ h1 {
   padding: 0 0 16px;
 }
 
-.posts-list article h2 a {
+.post-on-list h2 a {
     text-decoration: none;
 }
 
-.posts-list article picture {
+.post-on-list picture {
   width: 140px;
   height: 100px;
   line-height: 100px;
@@ -74,7 +74,7 @@ h1 {
   position: absolute;
 }
 
-.posts-list article picture img{
+.post-on-list picture img{
   max-width: 120px;
   max-height: 75px;
   display: inline-block;

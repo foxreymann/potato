@@ -1,21 +1,19 @@
-<section class="posts-list">
-  <article ng-repeat="item in feed.items">
-    <picture>
-      <a href="javascript:" ng-click="showPost(item)">
-        <img src="{{ item.media.m }}"/>
-      </a>
-    </picture>
-    <div>
-      <h2>
-        <a href="javascript:" ng-click="showPost(item)">{{item.title}}</a>
-      </h2>
-      <div class="post-data">
-        <a href="{{ config.authorPageUrl | stringFormat:item.author_id }}">Post author</a>
-        <span>
-          Published: {{ item.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
-        </span>
-        <a href="{{ item.link }}">View on Flickr</a>
-      </div>
+<article ng-repeat="item in feed.items" class="post-on-list">
+  <picture>
+    <a href="javascript:" ng-click="showPost(item)">
+      <img src="{{ item.media.m }}"/>
+    </a>
+  </picture>
+  <div>
+    <h2>
+      <a href="javascript:" ng-click="showPost(item)">{{item.title}}</a>
+    </h2>
+    <div class="post-data">
+      <a href="{{ config.authorPageUrl | stringFormat:item.author_id }}">Post author</a>
+      <span>
+        Published: {{ item.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
+      </span>
+      <a href="{{ item.link }}">View on Flickr</a>
     </div>
-  </article>
-</section>
+  </div>
+</article>
