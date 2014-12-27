@@ -22,14 +22,13 @@ h1 {
   margin: 10px 0 33px;
 }
 
-.posts-list {
+.posts-list, .post {
   border: 2px solid #555;
   border-radius: 4px;
 }
 
 .posts-list article {
   border-bottom: 2px solid #555;
-  text-overflow: ellipsis;
   height: 100px;
 }
 
@@ -47,17 +46,18 @@ h1 {
   overflow: hidden;
 }
 
-.posts-list .post-data > * {
+.post-data > * {
   margin-right: 10px;
 }
 
-h2 {
+.posts-list h2 {
   font-size: 26px;
   padding: 20px 0 16px;
 }
 
 .post h2 {
-  padding-top: 0;
+  font-size: 32px;
+  padding: 0 0 16px;
 }
 
 .posts-list article h2 a {

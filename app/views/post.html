@@ -1,8 +1,9 @@
 <article class="post">
   <h2><a href="javascript:" ng-href="{{ post.link }}">{{ post.title }}</a></h2>
-  <p>
-    <a href="{{ config.authorPageUrl | stringFormat:post.author_id }}">Post author</a> |
-    Published: {{ post.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
+  <p class="post-data">
+    <a href="{{ config.authorPageUrl | stringFormat:post.author_id }}">Post author</a>
+    <span> | </span>
+    <span> Published: {{ post.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }} </span>
   </p>
   <picture>
     <img src="{{ post.media.m }}"/>
