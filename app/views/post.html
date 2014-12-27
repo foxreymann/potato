@@ -5,16 +5,18 @@
     <span> | </span>
     <span> Published: {{ post.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }} </span>
   </p>
-  <picture>
-    <img src="{{ post.media.m }}"/>
-  </picture>
-  <div>
-    <div ng-bind-html="post.description" class="description">
+  <div class="content-with-picture">
+    <picture>
+      <img src="{{ post.media.m }}"/>
+    </picture>
+    <div>
+      <div ng-bind-html="post.description" class="description">
+      </div>
+      Tags:
+      <a ng-repeat="tag in post.tags" href="{{ config.searchPageUrl | stringFormat:tag }}">
+        {{ tag }}
+      </a>
     </div>
-    Tags:
-    <a ng-repeat="tag in post.tags" href="{{ config.searchPageUrl | stringFormat:tag }}">
-      {{ tag }}
-    </a>
   </div>
 
   <a href="#/">Back</a>

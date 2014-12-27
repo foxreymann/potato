@@ -29,7 +29,6 @@ section {
 
 .post-on-list {
   border-bottom: 2px solid #555;
-  height: 100px;
 }
 
 
@@ -37,13 +36,15 @@ section {
   border-bottom: none;
 }
 
-.post-on-list > div {
+.content-with-picture {
+  min-height: 100px;
+}
+
+.content-with-picture > div {
   display: inline-block;
   vertical-align: top;
   width: 100%;
   padding-left: 160px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .post-data > * {
@@ -64,7 +65,7 @@ section {
     text-decoration: none;
 }
 
-.post-on-list picture {
+.content-with-picture picture {
   width: 140px;
   height: 100px;
   line-height: 100px;
@@ -74,7 +75,7 @@ section {
   position: absolute;
 }
 
-.post-on-list picture img{
+.content-with-picture picture img{
   max-width: 120px;
   max-height: 75px;
   display: inline-block;
