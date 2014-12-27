@@ -47,14 +47,17 @@ h1 {
   overflow: hidden;
 }
 
-.posts-list .post-data {
-  color: red;
+.posts-list .post-data > * {
+  margin-right: 10px;
 }
 
-.posts-list article h2 {
+h2 {
   font-size: 26px;
-  max-height: 26px;
-  margin: 20px 0 16px;
+  padding: 20px 0 16px;
+}
+
+.post h2 {
+  padding-top: 0;
 }
 
 .posts-list article h2 a {
@@ -77,6 +80,10 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   border: 2px solid #555;
+}
+
+.post {
+
 }
 
 .post .description p {

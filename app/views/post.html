@@ -1,5 +1,5 @@
 <article class="post">
-  <h1><a href="javascript:" ng-href="{{ post.link }}">{{ post.title }}</a></h1>
+  <h2><a href="javascript:" ng-href="{{ post.link }}">{{ post.title }}</a></h2>
   <p>
     <a href="{{ config.authorPageUrl | stringFormat:post.author_id }}">Post author</a> |
     Published: {{ post.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
