@@ -44,7 +44,7 @@ section {
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  padding-left: 160px;
+  padding-left: 150px;
 }
 
 .post-data > * {
@@ -62,7 +62,7 @@ section {
 }
 
 .content-with-picture picture {
-  width: 140px;
+  width: 150px;
   height: 100px;
   line-height: 100px;
   text-align: center;
@@ -71,7 +71,7 @@ section {
   position: absolute;
 }
 
-.content-with-picture picture img{
+.content-with-picture picture img {
   max-width: 120px;
   max-height: 75px;
   display: inline-block;
@@ -85,7 +85,11 @@ section {
 }
 
 .post .post-data {
-  padding: 0 0 0 20px;
+  padding: 0 20px 10px;
+}
+
+.post .description {
+  padding-top: 10px;
 }
 
 .post .description p {
