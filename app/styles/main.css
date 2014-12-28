@@ -41,7 +41,7 @@ section {
 }
 
 .content-with-picture > div {
-  padding: 0 20px 0 150px;
+  padding: 0 30px 0 150px;
 }
 
 .post-data > * {
@@ -51,6 +51,7 @@ section {
 .post-on-list h2 {
   font-size: 26px;
   padding: 20px 0 16px;
+  color: #135592;
 }
 
 
@@ -113,6 +114,12 @@ section {
 .tags ul li {
   display: inline-block;
   margin: 0 10px 0 0;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Responsive: 800px and up */
