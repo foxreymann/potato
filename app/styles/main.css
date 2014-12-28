@@ -56,10 +56,6 @@ section {
   padding: 20px 0 16px;
 }
 
-.post h2 {
-  font-size: 32px;
-  padding: 0 0 16px;
-}
 
 .post-on-list h2 a {
     text-decoration: none;
@@ -83,8 +79,13 @@ section {
   border: 2px solid #555;
 }
 
-.post {
+.post h2 {
+  font-size: 32px;
+  padding: 16px 50px 20px 20px;
+}
 
+.post .post-data {
+  padding: 0 0 0 20px;
 }
 
 .post .description p {
