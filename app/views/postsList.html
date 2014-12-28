@@ -1,7 +1,10 @@
+<span ng-if="loading" class="animate-if">
+  loading!!
+</span>
 <article ng-repeat="item in feed.items" class="post-on-list content-with-picture">
   <picture>
     <a href="javascript:" ng-click="showPost(item)">
-      <img src="{{ item.media.m }}"/>
+      <img ng-src="{{ item.media.m }}"/>
     </a>
   </picture>
   <div>

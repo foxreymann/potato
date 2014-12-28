@@ -11,10 +11,12 @@
 angular.module('potatoFlickrApp')
   .controller('PostsListCtrl', function ($scope, $rootScope, $http, $location, productionConfig) {
     $scope.config = productionConfig;
+    $scope.loading = true;
 
     $http.jsonp($scope.config.feedUrl).
       success(function(data, status, headers, config) {
         $scope.feed = data;
+        $scope.loading = false;
       }).
       error(function(data, status, headers, config) {
         console.error('Error fetching feed:', data);
