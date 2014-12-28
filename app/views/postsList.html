@@ -13,7 +13,7 @@
     </h2>
     <div class="post-data">
       <a href="{{ config.authorPageUrl | stringFormat:item.author_id }}">Post author</a>
-      <span>
+      <span class="published">
         Published: {{ item.published | ordinalDate:"d MMMM yyyy 'at' H:mm" }}
       </span>
       <a href="{{ item.link }}">View on Flickr</a>
