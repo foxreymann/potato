@@ -77,9 +77,13 @@ section {
   border: 2px solid #555;
 }
 
+.post {
+  position: relative;
+}
+
 .post h2 {
   font-size: 32px;
-  padding: 16px 50px 20px 20px;
+  padding: 16px 85px 20px 20px;
 }
 
 .post .post-data {
@@ -100,7 +104,7 @@ section {
 }
 
 .tags {
-  margin-top: 10px;
+  padding: 10px 0 30px;
 }
 
 .tags div {
@@ -121,6 +125,18 @@ section {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+.back {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #555;
+  border-radius: 4px;
+  padding: 4px 10px;
 }
 
 /* Responsive: 800px and up */
