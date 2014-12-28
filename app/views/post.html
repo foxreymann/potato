@@ -13,10 +13,14 @@
       <div ng-bind-html="post.description" class="description">
       </div>
       <div class="tags">
-        Tags:
-        <a ng-repeat="tag in post.tags" href="{{ config.searchPageUrl | stringFormat:tag }}">
-          {{ tag }}
-        </a>
+        <div>Tags:</div>
+        <ul>
+          <li ng-repeat="tag in post.tags">
+            <a href="{{ config.searchPageUrl | stringFormat:tag }}">
+              {{ tag }}
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

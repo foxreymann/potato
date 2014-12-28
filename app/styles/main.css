@@ -100,6 +100,24 @@ section {
   display: block;
 }
 
+.tags {
+  margin-top: 10px;
+}
+
+.tags div {
+  width: 50px;
+  position: absolute;
+}
+
+.tags ul {
+   margin: 0 0 0 60px;
+}
+
+.tags ul li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
 /* Responsive: 800px and up */
 @media screen and (min-width: 800px) {
 
