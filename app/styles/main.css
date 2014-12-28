@@ -41,9 +41,6 @@ section {
 }
 
 .content-with-picture > div {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
   padding: 0 20px 0 150px;
 }
 
