@@ -59,6 +59,15 @@ section {
     text-decoration: none;
 }
 
+.post-on-list h2 a:hover {
+    text-decoration: underline;
+}
+
+.post-on-list picture img:hover {
+  border: 2px solid #135592;
+  transform: scale(1.05);
+}
+
 .content-with-picture picture {
   width: 150px;
   height: 100px;
