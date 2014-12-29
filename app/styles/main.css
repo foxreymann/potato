@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background: #fffaf3;
 }
 
 *, *:before, *:after {
@@ -146,6 +147,11 @@ section {
   border: 2px solid #555;
   border-radius: 4px;
   padding: 4px 10px;
+}
+
+.back:hover {
+  color: #135592;
+  border: 2px solid #135592;
 }
 
 /* Responsive: below 800px */
