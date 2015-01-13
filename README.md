@@ -1,7 +1,3 @@
-If you've been sent this link then we would like to better understand how you work, and to do this we'd like you to undertake a small assignment.
-
-At Potato, we use a variety of front end technologies to develop rich and responsive interfaces and have developed an assignment to help us assess a candidate's abilities in this broad discipline.
-
 The task is to consume a public [JSON API Feed](https://api.flickr.com/services/feeds/photos_public.gne?tags=potato&amp;tagmode=all&amp;format=json) ([documentation](https://www.flickr.com/services/feeds/docs/photos_public/)) and display the resulting data according to [these annotated wireframes](/static/download/FE-Dev-Task-Wires.zip).
 
 It should only take a few hours and there's no deadline. You won't be judged on the completion time, so there's no rush, just let us know once it's completed.
